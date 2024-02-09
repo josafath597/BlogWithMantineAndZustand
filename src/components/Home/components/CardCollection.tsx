@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import type { EntryModalProps } from '../../../interfaces/Entries';
 import useEntriesStore from '../../../store/useEntriesStore';
 import EntryModal from './EntryModal';
-import CustomLoader from '../../loader/loader';
+import CustomLoader from '../../loader/CustomLoader';
 
 const CardCollection = () => {
   const [opened, { toggle, close }] = useDisclosure(false);

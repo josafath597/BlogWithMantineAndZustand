@@ -8,7 +8,7 @@ import { DateTimePicker } from '@mantine/dates';
 import useEntriesStore from '../../../store/useEntriesStore';
 import { NewEntry } from '../../../interfaces/Entries';
 import 'dayjs/locale/es';
-import CustomLoader from '../../loader/loader';
+import CustomLoader from '../../loader/CustomLoader';
 
 const ModalAddEntry = () => {
   const stateModal = useEntriesStore((state) => state.stateModal);
