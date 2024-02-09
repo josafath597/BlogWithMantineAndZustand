@@ -28,11 +28,10 @@ const ModalAddEntry = () => {
       author: (value) => (/\S/.test(value) ? null : 'El campo no debe estar vacio'),
       content: (value) => (/\S/.test(value) ? null : 'El campo no debe estar vacio'),
       fecha_creacion: (value) => {
-        // Verificar que la fecha no es futura. Ajusta según lo necesites.
         if (value > new Date()) {
           return 'La fecha no puede ser futura';
         }
-        return null; // Si todo está correcto, retorna null.
+        return null;
       },
     },
   });
